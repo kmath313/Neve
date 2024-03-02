@@ -24,6 +24,9 @@
         statix.enable = true;
       };
       diagnostics = {
+        golangci_lint = {
+          enable = true;
+        };
         checkstyle = {
           enable = true;
         };
@@ -41,6 +44,12 @@
         };
       };
       formatting = {
+        gofumpt = {
+          enable = true;
+        };
+        goimports = {
+          enable = true;
+        };
         alejandra = {
           enable = true;
         };
