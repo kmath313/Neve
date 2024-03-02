@@ -7,6 +7,9 @@
       enable = true;
       capabilities = "offsetEncoding =  'utf-16'";
       servers = {
+        gopls = {
+          enable = true;
+        }
         clangd = {enable = true;};
         lua-ls = {
           enable = true;
