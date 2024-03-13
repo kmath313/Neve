@@ -6,6 +6,8 @@
 }: {
   config = {
     options = {
+      # Use system clipboardd
+      clipboard = unamedplus
       # Enable relative line numbers
       number = true;
       relativenumber = true;
