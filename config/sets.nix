@@ -7,7 +7,9 @@
   config = {
     options = {
       # Use system clipboard
-      clipboard = "unnamedplus";
+      clipboard = {
+        register = "unnamedplus";
+      };
       # Enable relative line numbers
       number = true;
       relativenumber = true;
