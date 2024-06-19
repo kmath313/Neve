@@ -1,11 +1,9 @@
 {
   plugins.telescope = {
     enable = true;
+
     extensions = {
       fzf-native = {
-        enable = true;
-      };
-      project-nvim = {
         enable = true;
       };
       ui-select = {
@@ -17,125 +15,115 @@
       };
       undo = {
         enable = true;
-        mappings = {
-          i = {
-            "<cr>" = "yank_additions";
-            "<s-cr>" = "yank_deletions";
-            "<c-cr>" = "restore";
-          };
-          n = {
-            "y" = "yank_additions";
-            "Y" = "yank_deletions";
-            "u" = "restore";
-          };
-        };
       };
     };
     # If you'd prefer Telescope not to enter a normal-like mode when hitting escape (and instead exiting), you can map <Esc> to do so via:
-    defaults = {
-      mappings = {
-        i = {
-          "<esc>" = {
-            __raw = ''
-              function(...)
-                return require("telescope.actions").close(...)
-              end'';
+    settings = {
+      defaults = {
+        mappings = {
+          i = {
+            "<esc>" = {
+              __raw = ''
+                function(...)
+                  return require("telescope.actions").close(...)
+                end'';
+            };
           };
         };
       };
     };
     keymaps = {
       "<leader><space>" = {
-        action = "find_files, {}";
-        desc = "Find project files";
+        action = "find_files";
+        options.desc = "Find project files";
       };
       "<leader>/" = {
         action = "live_grep";
-        desc = "Grep (root dir)";
+        options.desc = "Grep (root dir)";
       };
       "<leader>:" = {
-        action = "command_history, {}";
-        desc = "Command History";
+        action = "command_history";
+        options.desc = "Command History";
       };
       "<leader>b" = {
-        action = "buffers, {}";
-        desc = "+buffer";
+        action = "buffers";
+        options.desc = "+buffer";
       };
       "<leader>ff" = {
-        action = "find_files, {}";
-        desc = "Find project files";
+        action = "find_files";
+        options.desc = "Find project files";
       };
       "<leader>fr" = {
-        action = "oldfiles, {}";
-        desc = "Recent";
+        action = "oldfiles";
+        options.desc = "Recent";
       };
       "<leader>fb" = {
-        action = "buffers, {}";
-        desc = "Buffers";
+        action = "buffers";
+        options.desc = "Buffers";
       };
       "<C-p>" = {
-        action = "git_files, {}";
-        desc = "Search git files";
+        action = "git_files";
+        options.desc = "Search git files";
       };
       "<leader>gc" = {
-        action = "git_commits, {}";
-        desc = "Commits";
+        action = "git_commits";
+        options.desc = "Commits";
       };
       "<leader>gs" = {
-        action = "git_status, {}";
-        desc = "Status";
+        action = "git_status";
+        options.desc = "Status";
       };
       "<leader>sa" = {
-        action = "autocommands, {}";
-        desc = "Auto Commands";
+        action = "autocommands";
+        options.desc = "Auto Commands";
       };
       "<leader>sb" = {
-        action = "current_buffer_fuzzy_find, {}";
-        desc = "Buffer";
+        action = "current_buffer_fuzzy_find";
+        options.desc = "Buffer";
       };
       "<leader>sc" = {
-        action = "command_history, {}";
-        desc = "Command History";
+        action = "command_history";
+        options.desc = "Command History";
       };
       "<leader>sC" = {
-        action = "commands, {}";
-        desc = "Commands";
+        action = "commands";
+        options.desc = "Commands";
       };
       "<leader>sD" = {
-        action = "diagnostics, {}";
-        desc = "Workspace diagnostics";
+        action = "diagnostics";
+        options.desc = "Workspace diagnostics";
       };
       "<leader>sh" = {
-        action = "help_tags, {}";
-        desc = "Help pages";
+        action = "help_tags";
+        options.desc = "Help pages";
       };
       "<leader>sH" = {
-        action = "highlights, {}";
-        desc = "Search Highlight Groups";
+        action = "highlights";
+        options.desc = "Search Highlight Groups";
       };
       "<leader>sk" = {
-        action = "keymaps, {}";
-        desc = "Keymaps";
+        action = "keymaps";
+        options.desc = "Keymaps";
       };
       "<leader>sM" = {
-        action = "man_pages, {}";
-        desc = "Man pages";
+        action = "man_pages";
+        options.desc = "Man pages";
       };
       "<leader>sm" = {
-        action = "marks, {}";
-        desc = "Jump to Mark";
+        action = "marks";
+        options.desc = "Jump to Mark";
       };
       "<leader>so" = {
-        action = "vim_options, {}";
-        desc = "Options";
+        action = "vim_options";
+        options.desc = "Options";
       };
       "<leader>sR" = {
-        action = "resume, {}";
-        desc = "Resume";
+        action = "resume";
+        options.desc = "Resume";
       };
       "<leader>uC" = {
-        action = "colorscheme, {}";
-        desc = "Colorscheme preview";
+        action = "colorscheme";
+        options.desc = "Colorscheme preview";
       };
     };
   };
