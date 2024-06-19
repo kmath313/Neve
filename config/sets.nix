@@ -5,7 +5,7 @@
   ...
 }: {
   config = {
-    options = {
+    opts = {
       # Use system clipboard
       clipboard = {
         register = "unnamedplus";

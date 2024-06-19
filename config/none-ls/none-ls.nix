@@ -19,7 +19,6 @@
     '';
     sources = {
       code_actions = {
-        eslint_d.enable = true;
         gitsigns.enable = true;
         statix.enable = true;
       };
@@ -31,15 +30,6 @@
           enable = true;
         };
         statix = {
-          enable = true;
-        };
-        luacheck = {
-          enable = true;
-        };
-        flake8 = {
-          enable = true;
-        };
-        eslint_d = {
           enable = true;
         };
       };
@@ -64,9 +54,6 @@
         google_java_format = {
           enable = true;
         };
-        rustfmt = {
-          enable = true;
-        };
         stylua = {
           enable = true;
         };
@@ -77,9 +64,6 @@
               extra_args = { "--fast" },
             }
           '';
-        };
-        jq = {
-          enable = true;
         };
       };
     };
