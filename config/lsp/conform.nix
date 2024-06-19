@@ -15,6 +15,8 @@
       nix = ["alejandra"];
       markdown = [["prettierd" "prettier"]];
       rust = ["rustfmt"];
+      go = ["goimports" "gofumpt"];
+      yaml = ["yamlfix" "yamlfmt"];
     };
   };
 
