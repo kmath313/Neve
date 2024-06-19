@@ -7,6 +7,9 @@
       enable = true;
       capabilities = "offsetEncoding =  'utf-16'";
       servers = {
+        yamlls = {
+          enable = true;
+        };
         gopls = {
           enable = true;
         };
