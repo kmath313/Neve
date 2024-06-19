@@ -11,6 +11,8 @@
       typescriptreact = ["eslint_d"];
       json = ["jsonlint"];
       java = ["checkstyle"];
+      go = ["golangcilint"];
+      yaml = ["yamllint"];
     };
   };
 }
