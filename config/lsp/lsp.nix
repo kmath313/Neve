@@ -3,6 +3,10 @@
     lsp-format = {
       enable = false; # Enable it if you want lsp-format integration for none-ls
     };
+    schemastore = {
+      yamlls.enable = true;
+      json.enable = true;
+    };
     lsp = {
       enable = true;
       capabilities = "offsetEncoding =  'utf-16'";
