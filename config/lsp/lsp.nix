@@ -4,7 +4,7 @@
       enable = false; # Enable it if you want lsp-format integration for none-ls
     };
     schemastore = {
-      yamlls.enable = true;
+      yaml.enable = true;
       json.enable = true;
     };
     lsp = {
