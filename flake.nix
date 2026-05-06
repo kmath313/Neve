@@ -4,6 +4,7 @@
   inputs = {
     nixvim.url = "github:nix-community/nixvim";
     flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.follows = "nixvim/nixpkgs";
   };
 
   outputs = {
